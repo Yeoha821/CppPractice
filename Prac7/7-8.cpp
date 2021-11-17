@@ -9,6 +9,9 @@ class Circle{
 public:
     Circle(int radius=0) { this->radius = radius; }
     void show() { cout << "radius = " << radius << " 인 원" << endl; }
+    
+    friend Circle& operator++ (Circle& a);
+    friend Circle operator++ (Circle& a, int x);
 };
 
 // 다음 연산이 가능하도록 연산자를 프렌드 함수로 작성하라.
