@@ -53,7 +53,7 @@ public:
 		this->availInk = availInk;
 	}
 	bool printInkJet(int pages);
-	void show() { // 기본 클래스의 present() 먼저 실행됨
+	void show() { 
 		cout << "잉크젯: " << getModel() << ", " << getManufacturer() << ", 남은 종이 " << getAvailCount()
 			<< "장, 남은 잉크 " << availInk << endl;
 	}
@@ -83,7 +83,7 @@ public:
 		this->availToner = availToner;
 	}
 	bool printLaser(int pages);
-	void show() { // 기본 클래스의 present() 먼저 실행됨
+	void show() { 
 		cout << "레이저: " << getModel() << ", " << getManufacturer() << ", 남은 종이 " << getAvailCount()
 			<< "장, 남은 토너 " << availToner << endl;
 	}
